@@ -21,12 +21,11 @@ int main()
 	cout << "Введіть крок за х - ";
 	cin >> c;
 	float y, x = a;
-	while (x <= b)
-	{
+	do {
 		y = pow(x, 3) + 2 * abs(log(x)) + 3;
 		cout << setw(10) << "x=" << x << setw(10) << "y=" << y << endl;
 		x += c;
-	}
+	} while (x <= b);
 	system("pause");
 	return 0;
 }
