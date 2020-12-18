@@ -2,32 +2,12 @@
 //
 
 #include <iostream> 
-#include <iomanip> 
-#include "windows.h"
 
 using namespace std;
 
 int main()
 {
-	SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
-
-	int a, b;
-	float c;
-	cout << "Введіть початкове х - ";
-	cin >> a;
-	cout << "Введіть кінцеве х - ";
-	cin >> b;
-	cout << "Введіть крок за х - ";
-	cin >> c;
-	float y, x = a;
-	do {
-		y = pow(x, 3) + 2 * abs(log(x)) + 3;
-		cout << setw(10) << "x=" << x << setw(10) << "y=" << y << endl;
-		x += c;
-	} while (x <= b);
-	system("pause");
-	return 0;
+	cout << "Hello, world";
 }
 
 
